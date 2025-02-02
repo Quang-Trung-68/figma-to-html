@@ -57,6 +57,22 @@ a {
   max-width: calc(100% - 48px);
 }
 
+/* ======cac dong dai chi hien thi dau ba cham====== */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+/* Nguy co nguoi dung nhap 1 ky tu qua dai ma chua xuong dong */
+.break-all {
+  word-break: break-all;
+}
 /* ==========header========== */
 
 .header {
@@ -281,7 +297,7 @@ a {
   margin-left: 28px;
 }
 
-/* ========popular============ */
+/* =======================popular========================= */
 
 .popular {
   padding: 65px 0px;
@@ -335,6 +351,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 
 .popular .course-item:hover {
